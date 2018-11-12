@@ -1,10 +1,11 @@
 import React from 'react'
 import avi from '../../avi.jpg'
+import './content.css'
 
 const About = () => {
-    return ( <div>
+    return ( <div className='about'>
         
-        <img src={avi} alt='Profile pic'/>
+        <img className='avi' src={avi} alt='Profile pic'/>
 
         <div>
             <p>
@@ -13,6 +14,10 @@ const About = () => {
 
             <p>
                 I am looking for a junior role in a company that provides its junior developers with enough mentorship to learn and grow within the company. If this sounds like you, please feel free to reach out to me. I am also open for freelancing and contract work.
+            </p>
+
+            <p>
+                When I'm not coding I like to relax by going to concerts, playing the guitar, watch anime or exercising.
             </p>
         </div>
         

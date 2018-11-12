@@ -7,9 +7,10 @@ import NavContainer from './components/Nav/NavContainer';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className='app-container'>
         <HeaderContainer />
         <ContentContainer />
+        <hr/>
         <NavContainer />
       </div>
     );
