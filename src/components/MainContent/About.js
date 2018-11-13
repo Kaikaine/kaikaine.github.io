@@ -2,10 +2,31 @@ import React from 'react'
 import avi from '../../avi.jpg'
 import './content.css'
 
+// document.querySelector('.avi').addEventListener('mouseover', () => {
+//     document.querySelector('.avi').classList.add('angry-animate')
+// })
+
+// document.querySelector('.avi').addEventListener('mouseleave', () => {
+//     document.querySelector('.avi').classList.remove('angry-animate')
+// })
+
+const spin = () => {
+    if (document.querySelector('.avi').classList.contains('angry-animate')) {
+        document.querySelector('.avi').classList.remove('angry-animate')
+    }
+    else {
+        document.querySelector('.avi').classList.add('angry-animate')
+    }
+}
+
+// const unspin = () => {
+//     document.querySelector('.avi').classList.remove('angry-animate')
+// }
+
 const About = () => {
     return ( <div className='about'>
         
-        <img className='avi' src={avi} alt='Profile pic'/>
+        <img onClick={spin} className='avi' src={avi} alt='Profile pic'/>
 
         <div>
             <p>

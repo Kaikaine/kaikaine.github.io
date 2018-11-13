@@ -1,6 +1,6 @@
 import React from 'react'
 import {  Link } from 'react-router-dom';
-
+import './nav.css'
 const nav = [
     {
         link: 'About',
@@ -21,7 +21,7 @@ const Nav = () => {
         
         {nav.map((nav, i) => {
             return <Link to={nav.route} key={i}>
-            <div>{nav.link}</div>
+            <div className='links'>{nav.link}</div>
             </Link>
         })}
         
